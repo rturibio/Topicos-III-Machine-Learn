@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 5 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 0
+Relation:     Glass
+Instances:    214
+Attributes:   10
+              RI
+              Na
+              Mg
+              Al
+              Si
+              K
+              Ca
+              Ba
+              Fe
+              Type
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 8
+Within cluster sum of squared errors: 60.831721864341446
+
+Initial starting points (random):
+
+Cluster 0: 1.51793,12.79,3.5,1.12,73.03,0.64,8.77,0,0,'build wind float'
+Cluster 1: 1.51837,13.14,2.84,1.28,72.85,0.55,9.07,0,0,'build wind float'
+Cluster 2: 1.51556,13.87,0,2.54,73.23,0.14,9.41,0.81,0.01,headlamps
+Cluster 3: 1.51592,12.86,3.52,2.12,72.66,0.69,7.97,0,0,'build wind non-float'
+Cluster 4: 1.52172,13.48,3.74,0.9,72.01,0.18,9.61,0,0.07,'build wind float'
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                         Cluster#
+Attribute                          Full Data                    0                    1                    2                    3                    4
+                                     (214.0)               (60.0)               (16.0)               (31.0)               (83.0)               (24.0)
+=====================================================================================================================================================
+RI                                    1.5184               1.5174                1.519               1.5168               1.5186               1.5216
+Na                                   13.4079              13.0737              13.1537              14.5355              13.1663              13.7917
+Mg                                    2.6845               3.4787               0.6775               0.5597               2.9824               3.7517
+Al                                    1.4449                1.283               1.9269               2.0465               1.4214               0.8325
+Si                                   72.6509               72.885              72.4675              73.0958              72.5806              71.8567
+K                                     0.4971               0.5535               1.1944               0.3042                0.498               0.1371
+Ca                                     8.957               8.5303              10.2287               8.4029               9.0807               9.4633
+Ba                                     0.175               0.0015               0.1525               0.9729                0.046               0.0396
+Fe                                     0.057                0.052               0.0494               0.0126               0.0761               0.0658
+Type                    build wind non-float     build wind float           containers            headlamps build wind non-float     build wind float
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       60 ( 28%)
+1       16 (  7%)
+2       31 ( 14%)
+3       83 ( 39%)
+4       24 ( 11%)
+

@@ -1,0 +1,42 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.75 -D 0.05 -U 1.0 -M 0.3 -S -1.0 -c -1
+Relation:     weka-transacao-mod
+Instances:    10
+Attributes:   7
+              Leite
+              Cafe
+              Cerveja
+              Pao
+              Manteiga
+              Arroz
+              Feijao
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.65 (6 instances)
+Minimum metric <confidence>: 0.75
+Number of cycles performed: 7
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 5
+
+Size of set of large itemsets L(2): 10
+
+Best rules found:
+
+ 1. Cerveja=n 8 ==> Leite=n 7    <conf:(0.88)> lift:(1.09) lev:(0.06) [0] conv:(0.8)
+ 2. Leite=n 8 ==> Cerveja=n 7    <conf:(0.88)> lift:(1.09) lev:(0.06) [0] conv:(0.8)
+ 3. Feijao=n 8 ==> Arroz=n 7    <conf:(0.88)> lift:(1.09) lev:(0.06) [0] conv:(0.8)
+ 4. Arroz=n 8 ==> Feijao=n 7    <conf:(0.88)> lift:(1.09) lev:(0.06) [0] conv:(0.8)
+ 5. Cafe=n 8 ==> Leite=n 6    <conf:(0.75)> lift:(0.94) lev:(-0.04) [0] conv:(0.53)
+ 6. Leite=n 8 ==> Cafe=n 6    <conf:(0.75)> lift:(0.94) lev:(-0.04) [0] conv:(0.53)
+ 7. Arroz=n 8 ==> Leite=n 6    <conf:(0.75)> lift:(0.94) lev:(-0.04) [0] conv:(0.53)
+ 8. Leite=n 8 ==> Arroz=n 6    <conf:(0.75)> lift:(0.94) lev:(-0.04) [0] conv:(0.53)
+ 9. Feijao=n 8 ==> Leite=n 6    <conf:(0.75)> lift:(0.94) lev:(-0.04) [0] conv:(0.53)
+10. Leite=n 8 ==> Feijao=n 6    <conf:(0.75)> lift:(0.94) lev:(-0.04) [0] conv:(0.53)
+
